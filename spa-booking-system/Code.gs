@@ -5,11 +5,12 @@
 // ============================================================
 
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzlir2B1rdEmchJ56QQ1orNW4mJOdbRNRjWseZ2mfdErGB_oNC8Z5hf6YCrL5Q-cOBS2w/exec"
-
-
 const SHEET_NAME_MASSAGE    = "Massage Bookings";
 const SHEET_NAME_PEDICURE   = "Pedicure & Manicure Bookings";
+
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('index');
+}
 
 function doPost(e) {
   try {
